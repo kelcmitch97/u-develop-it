@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const db = require('../../db/connection');
 
+router.use(require('./voterRoutes'));
+
 // Party route
 router.get('/parties', (req, res) => {
     const sql = `SELECT * FROM parties`;
