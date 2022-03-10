@@ -123,4 +123,4 @@ router.post('/candidate', ({ body }, res) => {
     });
 });
 
-module.export = router;
+module.exports = router;
